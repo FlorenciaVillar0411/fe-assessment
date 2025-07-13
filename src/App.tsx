@@ -1,7 +1,13 @@
+import { Sidebar } from "./components/Sidebar"
+import { WorkFlows } from "./components/Workflows"
+
+
 function App() {
+
   return (
-    <div className="text-lg">
-      Technical assessment
+    <div className="flex">
+      <Sidebar/>
+      <WorkFlows/>
     </div>
   )
 }
