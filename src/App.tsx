@@ -1,13 +1,13 @@
+import { Outlet } from "react-router-dom"
 import { Sidebar } from "./components/Sidebar"
-import { WorkFlows } from "./components/Workflows"
 
 
 function App() {
 
   return (
-    <div className="flex">
+    <div className="flex min-h-screen min-w-screen">
       <Sidebar/>
-      <WorkFlows/>
+      <Outlet/>
     </div>
   )
 }

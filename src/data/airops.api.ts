@@ -1,7 +1,7 @@
 import AirOps from "@airops/airops-js";
 
 const airopsInstance = new AirOps();
-const appId = import.meta.env.appId;
+const appId = import.meta.env.VITE_appId;
 
 export const fetchWorkflows = async (): Promise<WorkFlow[]> => {
   try {
